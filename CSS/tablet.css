@@ -1,0 +1,56 @@
+/*General Styles*/
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    width: 100%;
+}
+
+nav {
+    padding: 1%;
+    background-color: #191919;
+    display: block;
+}
+
+#logo {
+    height: 35%;
+    width: 35%;
+}
+
+/*Home Page Styles*/
+#lowerMain {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#monthlyEvents {
+    width: 100%;
+    order: 1;
+}
+
+#awards {
+    order: 2;
+    width: 100%;
+}
+
+/*Join Page Styles*/
+aside {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/*Tutorials Page Styles*/
+.guide {
+    width: 80%;
+}
+
+.grid img {
+    margin-top: 10%;
+}
+
+.bio {
+    width: 80%;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <title>Command Club KC</title>
+    <link rel="stylesheet" href="../CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/tablet.css" type="text/css"
+        media="only screen and (min-width:551px) and (max-width: 960px)">
+    <link rel="stylesheet" href="../CSS/phone.css" type="text/css"
+        media="only screen and (max-width:550px)">
+    <link rel="icon" type="img/png" href="../Images/favicon.png">
+</head>
+<body>
+  <nav id="nav">
+      <img src="../Images/Hamburger Icon.png" id="hamburger" onclick="showMenu(); return false;" />
+  </nav>
+  <div id="menu">
+      <img src="../Images/Logo.png" id="logo" />
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/join.html">Join the Club</a>
+      <a href="../HTML/store.html">Store</a>
+      <a href="../HTML/events.html">Past Events</a>
+      <a href="../HTML/tutorials.html">Tutorials</a>
+      <a href="../HTML/club_officers.html">Club Officers</a>
+  </div>
+  <!-- Images used to open the lightbox -->
+  <h1 style="text-align: center;">Our Past Events</h1>
+  <div id="lightbox">
+      <div class="eventImg">
+      <h4>February Tournament</h4>
+        <img src="../Images/Magic Event 1 Thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+
+      <div class="eventImg">
+      <h4>March Tournament</h4>
+        <img src="../Images/Magic Event 2 Thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+
+      <div class="eventImg">
+      <h4>April Tournament</h4>
+        <img src="../Images/Magic Event 3 Thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+
+      <div class="eventImg">
+      <h4>May Tournament</h4>
+        <img src="../Images/Magic Event 4 Thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+
+      <div class="eventImg">
+      <h4>June Tournament</h4>
+        <img src="../Images/Magic Event 5 Thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div id="lightboxDisplay">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="../Images/Magic Event 1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="../Images/Magic Event 2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="../Images/Magic Event 3.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="../Images/Magic Event 4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="../Images/Magic Event 5.jpg" style="width:100%">
+        </div>
+    
+        <!-- Next/previous controls -->
+        <div class="controls">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="thumbControl">
+          <img class="demo" src="../Images/Magic Event 1 Thumb.jpg" onclick="currentSlide(1)" alt="February">
+        
+          <img class="demo" src="../Images/Magic Event 2 Thumb.jpg" onclick="currentSlide(2)" alt="March">
+      
+          <img class="demo" src="../Images/Magic Event 3 Thumb.jpg" onclick="currentSlide(3)" alt="April">
+        
+          <img class="demo" src="../Images/Magic Event 4 Thumb.jpg" onclick="currentSlide(4)" alt="May">
+      
+          <img class="demo" src="../Images/Magic Event 5 Thumb.jpg" onclick="currentSlide(5)" alt="June">
+      </div>
+    </div>
+  </div>
+  <footer id="contactInfo">
+    <h3>Contact Info</h3>
+    <p>
+        Phone Number: 555-555-5555
+        <br />
+        Email: commandclubkc@gmail.com
+        <br />
+        Address: 9999 N Elm Ave, Kansas City, MO
+    </p>
+  </footer>
+</body>
+<script src="../Scripts/main.js" ></script>
+</html>

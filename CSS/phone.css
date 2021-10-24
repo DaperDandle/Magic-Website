@@ -1,0 +1,96 @@
+/*Navigation Styles*/
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    width: 100%;
+}
+
+nav {
+    padding: 1%;
+    background-color: #191919;
+    display: block;
+}
+
+#logo {
+    height: 35%;
+    width: 35%;
+}
+
+/*Home Page Styles*/
+
+#main {
+    flex-direction: column;
+}
+ 
+#lowerMain {
+     flex-direction: column;
+     flex-wrap: wrap;
+}
+ 
+#monthlyEvents {
+     width: 100%;
+     order: 1;
+}
+ 
+#awards {
+     order: 2;
+     width: 100%;
+}
+
+#message {
+    width: 95%;
+}
+
+#calendar {
+    width: 95%;
+    z-index: 0;
+}
+
+#awards {
+    width:100%;
+}
+
+/*Join Page Styles*/
+aside {
+    width: 95%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Past Events Page Styles*/
+.close {
+    top: 0;
+    right: 0;
+}
+
+/* Tutorials Page Styles*/
+#videoTutorial {
+    width: 95%;
+}
+.guide {
+    width: 80%;
+}
+
+.pdf {
+    margin-right: 15%;
+}
+
+/*Store Page Styles*/
+.details {
+    flex-direction: column;
+}
+
+.grid {
+    grid-template-columns: auto 45%;
+}
+.grid img {
+    margin-top: 30%;
+}
+
+.bio {
+    width: 80%;
+}

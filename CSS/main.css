@@ -1,0 +1,533 @@
+ /*General Styles*/
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Righteous;
+}
+label {
+    margin: 5%;
+} 
+
+.button {
+    margin-top: 5%;
+    width: 50%;
+    background-color: #191919;
+    color: #FFE300;
+    border: #FFE300 1px solid;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Navigation Styles*/
+#menu {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    height: 30%;
+    border-bottom: #FFE300 2px solid;
+}
+
+#logo {
+    height: 8%; 
+    width: 8%;
+}
+
+nav {
+    display: none;
+}
+
+#menu a {
+    text-align: center;
+    color: #FFE300;
+    background-color:#191919;
+    width: 15%;
+    height: 50%;
+    margin: 2%;
+}
+
+#menu a:hover {
+    border: 2px solid #FFE300;
+    border-radius: 5px;
+}
+
+/*Footer*/
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-left: 5%;
+    background-color: #191919;
+    color: #FFE300;
+
+}
+
+/*Home Page Styles*/
+#main {
+   display: flex;
+}
+
+#lowerMain {
+    display: flex;
+}
+
+#message {
+    width: 50%;
+    margin:2.5%;
+}
+#calendar {
+    width: 50%;
+}
+#awards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:50%;
+    color: #FFE300;
+    background-color: #191919;
+}
+#awards h2 {
+    margin: 3% auto;
+    padding: 1%;
+}
+#awards p {
+    padding: 2%;
+}
+
+#awards img {
+    height: 30%; 
+    width: 30%; 
+    margin: 2%;
+    border: 2px #fff solid;
+}
+
+#awards img:hover {
+    height: 40%;
+    width: 40%
+}
+
+.awardRow {
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+#monthlyEvents {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+#monthlyEvents input {
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+#monthlyEvents ul {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    list-style: none;
+}
+
+#monthlyEvents li {
+    margin: 2%;
+    padding: 5%;
+    background-color: #191919;
+    text-align: center;
+    border: #FFE300 2px solid;
+    
+}
+
+#monthlyEvents a {
+    color: #FFE300;
+    
+}
+
+/*Join Page Styles*/
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    padding: 5%;
+    border: #191919 2px solid;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+aside {
+    margin: 5% 10%;
+    width: 50%;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+#q2{
+    display: none;
+}
+
+#q3{
+    display: none;
+}
+
+#q4{
+    display: none;
+}
+
+#q5{
+    display: none;
+}
+
+/*Past Events Page Styles*/
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 2%;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: black;
+   overflow: scroll;
+}
+  
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    color: #FFE300;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 90%;
+}
+
+.prev,
+.next {
+    height: 30%;
+    cursor: pointer;
+    margin: auto;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.numbertext {
+    color: #FFE300;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: #FFE300;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #FFE300;
+}
+
+#lightbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #191919;
+}
+
+.eventImg {
+    color: #FFE300;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.thumbControl {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #191919;
+
+}
+
+.thumbControl img {
+    width: 29%;
+    margin: 2%;
+}
+
+#lightboxDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.controls {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #FFE300;
+}
+
+/*Tutorials Page Styles*/
+#tutorials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-items: center;
+    background-color: #191919;
+    padding: 0% 1% 1% 1%;
+    text-align: center;
+}
+
+.tutorialCard {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #191919 2px solid;
+    border-radius: 5%;
+    background-color: #FFE300;
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+}
+
+.tutorialCard img {
+    height: 50%;
+}
+
+.tutorialCard p {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #191919 2px solid;
+    padding: 5%;
+    font-weight: bold;
+}
+
+#videoTutorial {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+/*Tutorials Details Pages Styles*/
+.guide {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #191919;
+    color: #FFE300;
+    padding: 5%;
+    border: #FFE300 2px solid;
+}
+
+.guide img {
+    width: 100%;
+}
+
+.guide p {
+    text-align: justify;
+}
+
+.pdf {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: #FFE300;
+    margin-left: auto;
+    margin-right: 10%;
+}
+.pdf img{
+    margin-left: 15%;
+}
+
+.store {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/*Store Page Styles*/
+.accordion {
+    display: flex;
+    padding: 1%;
+    background-color: #191919;
+    color: #FFE300;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: #999 2px solid;
+}
+
+.accordion h3 {
+    width: 100%;
+}
+
+.ddBtn {
+    margin-left: auto;
+    margin-right: 5%;
+
+}
+
+.accordionPane {
+    display: none;
+    width: 79%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    font-weight: bold;
+}
+
+.accordionPane img {
+    margin: 5%;
+    width: 30%;
+}
+
+.details {
+    margin-top: 5%;
+    display: flex;
+    height: 25%;
+    align-items: center;
+}
+
+.details input {
+    margin-right: 5%;
+    height: 10%;
+    width: 25%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 35%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    background-color: #191919;
+    color: #FFE300;
+}
+
+.role {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    justify-content: center;
+    border-bottom: #FFE300 2px solid;
+}
+
+.grid img {
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width:95%;
+    border: #999 1px solid;
+}
+
+.grid a {
+    color: #FFE300;
+    text-decoration: none;
+}
+
+.grid a:hover {
+    text-decoration: underline;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #191919;
+    color: #FFE300;
+    padding: 5%;
+    border: #FFE300 2px solid;
+    text-align: justify;
+}
+
+.bio a {
+    color: #FFE300;
+    border: #FFE300 2px solid;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    padding: 1%;
+}
+
+.bio a:hover {
+    text-decoration: underline;
+}
