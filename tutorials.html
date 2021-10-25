@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width
+    , initial-scale=1.0"
+    />
+    <title>Command Club KC</title>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="CSS/tablet.css"
+      type="text/css"
+      media="only screen and (min-width:551px) and (max-width: 960px)"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/phone.css"
+      type="text/css"
+      media="only screen and (max-width:550px)"
+    />
+    <link rel="icon" type="img/png" href="Images/favicon.png" />
+  </head>
+  <body>
+    <nav id="nav">
+      <img
+        src="Images/Hamburger Icon.png"
+        id="hamburger"
+        onclick="showMenu(); return false;"
+      />
+    </nav>
+    <div id="menu">
+      <img src="Images/Logo.png" id="logo" />
+      <a href="index.html">Home</a>
+      <a href="join.html">Join the Club</a>
+      <a href="store.html">Store</a>
+      <a href="events.html">Past Events</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="club_officers.html">Club Officers</a>
+    </div>
+
+    <h1 style="text-align: center">Tutorials</h1>
+    <!--Tutorials Container-->
+    <div id="tutorials">
+      <div class="tutorialCard hover-shadow">
+        <h3>How to Build a Commander Deck</h3>
+        <a href="deck_build.html"
+          ><img src="Images/Building a deck.jpg" alt="Building a deck"
+        /></a>
+        <p>Learn to build a commander deck with synergy</p>
+      </div>
+      <div class="tutorialCard hover-shadow">
+        <h3>Ultimate Lands Guide</h3>
+        <a href="land_guide.html"
+          ><img src="Images/Magic Lands.jpg" alt="Magic Lands"
+        /></a>
+        <p>A guide to the best lands to include in your decks</p>
+      </div>
+      <div class="tutorialCard hover-shadow">
+        <h3>Mana Ramp Guide</h3>
+        <a href="mana_ramp.html"
+          ><img src="Images/Ramp.jpg" alt="Mana Ramp"
+        /></a>
+        <p>Accelerate your game with the best mana ramp</p>
+      </div>
+      <div class="tutorialCard hover-shadow">
+        <h3>Choosing a Commander</h3>
+        <a href="commander_guide.html"
+          ><img src="Images/Commanders.jpg" alt="Commanders"
+        /></a>
+        <p>Choose the best commander for any play-style</p>
+      </div>
+      <div class="tutorialCard hover-shadow">
+        <h3>Card Draw Guide</h3>
+        <a href="card_draw.html"
+          ><img src="Images/Card Draw.jpg" alt="Building a deck"
+        /></a>
+        <p>Find out which sources of card draw are best for your deck</p>
+      </div>
+      <div class="tutorialCard hover-shadow">
+        <h3>Removal Guide</h3>
+        <a href="removal_guide.html"
+          ><img src="Images/Removal.jpg" alt="Building a deck"
+        /></a>
+        <p>Stop your opponents dead in their tracks with our removal guide</p>
+      </div>
+    </div>
+    <!--Video Tutorial-->
+    <div>
+      <h1 style="text-align: center">Commander Deck Building Template Video</h1>
+      <iframe
+        id="videoTutorial"
+        width="550px"
+        height="300px"
+        src="https://www.youtube.com/embed/3K9PEeLG_6M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <footer id="contactInfo">
+      <h3>Contact Info</h3>
+      <p>
+        Phone Number: 555-555-5555
+        <br />
+        Email: commandclubkc@gmail.com
+        <br />
+        Address: 9999 N Elm Ave, Kansas City, MO
+      </p>
+    </footer>
+  </body>
+  <script src="Scripts/main.js"></script>
+</html>

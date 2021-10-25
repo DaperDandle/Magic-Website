@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width
+    , initial-scale=1.0"
+    />
+    <title>Command Club KC</title>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="CSS/tablet.css"
+      type="text/css"
+      media="only screen and (min-width:551px) and (max-width: 960px)"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/phone.css"
+      type="text/css"
+      media="only screen and (max-width:550px)"
+    />
+    <link rel="icon" type="img/png" href="Images/favicon.png" />
+  </head>
+  <body>
+    <nav id="nav">
+      <img
+        src="Images/Hamburger Icon.png"
+        id="hamburger"
+        onclick="showMenu(); return false;"
+      />
+    </nav>
+    <div id="menu">
+      <img src="Images/Logo.png" id="logo" />
+      <a href="index.html">Home</a>
+      <a href="join.html">Join the Club</a>
+      <a href="store.html">Store</a>
+      <a href="events.html">Past Events</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="club_officers.html">Club Officers</a>
+    </div>
+
+    <div id="main">
+      <!--Advertisement-->
+      <aside>
+        <h1>Sign Up Now!</h1>
+        <p>
+          Get our monthly news letter and find out about new events before
+          anyone else!
+        </p>
+        <img src="Images/MTG_flash_sale.jpg" width="100%" />
+      </aside>
+      <!--Join Form-->
+      <form class="form" action="join_extra.html">
+        <label>First Name</label>
+        <input
+          type="text"
+          required
+          pattern="^[a-zA-Z ]*$"
+          oninvalid="this.setCustomValidity('No Numbers or Special Characters Allowed')"
+          oninput="this.setCustomValidity('')"
+        />
+
+        <label>Last Name</label>
+        <input
+          type="text"
+          required
+          pattern="^[a-zA-Z ]*$"
+          oninvalid="this.setCustomValidity('No Numbers or Special Characters Allowed')"
+          oninput="this.setCustomValidity('')"
+        />
+
+        <label>Address</label>
+        <input
+          type="text"
+          required
+          pattern="^[#.0-9a-zA-Z\s,-]+$"
+          oninvalid="this.setCustomValidity('No Special Characters Allowed')"
+          oninput="this.setCustomValidity('')"
+        />
+
+        <label>City</label>
+        <input
+          type="text"
+          required
+          pattern="^[a-zA-Z ]*$"
+          oninvalid="this.setCustomValidity('No Numbers or Special Characters Allowed')"
+          oninput="this.setCustomValidity('')"
+        />
+
+        <label>State</label>
+        <select name="state" id="state" required>
+          <option>Alabama</option>
+          <option>Alaska</option>
+          <option>Arizona</option>
+          <option>Arkansas</option>
+          <option>California</option>
+          <option>Colorado</option>
+          <option>Connecticut</option>
+          <option>Delaware</option>
+          <option>Florida</option>
+          <option>Georgia</option>
+          <option>Hawaii</option>
+          <option>Idaho</option>
+          <option>Illinois</option>
+          <option>Indiana</option>
+          <option>Iowa</option>
+          <option>Kansas</option>
+          <option>Kentucky</option>
+          <option>Louisiana</option>
+          <option>Maine</option>
+          <option>Maryland</option>
+          <option>Massachusetts</option>
+          <option>Michigan</option>
+          <option>Mississippi</option>
+          <option>Missouri</option>
+          <option>Montana</option>
+          <option>Nebraksa</option>
+          <option>Nevada</option>
+          <option>New Hampshire</option>
+          <option>New Jersey</option>
+          <option>New Mexico</option>
+          <option>New York</option>
+          <option>North Carolina</option>
+          <option>North Dakota</option>
+          <option>Ohio</option>
+          <option>Oklahoma</option>
+          <option>Oregon</option>
+          <option>Pensylvania</option>
+          <option>Rhode Island</option>
+          <option>South Carolina</option>
+          <option>South Dakota</option>
+          <option>Tennessee</option>
+          <option>Texas</option>
+          <option>Utah</option>
+          <option>Vermont</option>
+          <option>Virginia</option>
+          <option>Washington</option>
+          <option>West Virginia</option>
+          <option>Wisconsin</option>
+          <option>Wyoming</option>
+        </select>
+
+        <label>Email Address</label>
+        <input type="email" required />
+
+        <label>Phone Number</label>
+        <input
+          type="tel"
+          required
+          pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+          oninvalid="this.setCustomValidity('Please Enter a Phone Number in the Format: ###-###-####')"
+          oninput="this.setCustomValidity('')"
+        />
+        <input type="submit" class="button" />
+      </form>
+    </div>
+    <footer id="contactInfo">
+      <h3>Contact Info</h3>
+      <p>
+        Phone Number: 555-555-5555
+        <br />
+        Email: commandclubkc@gmail.com
+        <br />
+        Address: 9999 N Elm Ave, Kansas City, MO
+      </p>
+    </footer>
+  </body>
+  <script src="Scripts/main.js"></script>
+</html>
